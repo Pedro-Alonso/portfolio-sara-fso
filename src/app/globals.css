@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "@/theme/colors.css";
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +7,7 @@
 
 :root {
   --background: linear-gradient(to bottom, rgb(244, 241, 236) 0%, white 100%);
-  --foreground: #333;
+  --foreground: #303030;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +17,7 @@
       rgb(30, 30, 30) 0%,
       rgb(20, 20, 20) 100%
     );
-    --foreground: #f0f0f0;
+    --foreground: #f9f9f9;
   }
 }
 
