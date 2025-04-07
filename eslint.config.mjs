@@ -12,7 +12,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
-    files: ["*.ts", "*.tsx", "*.css"],
+    files: ["*.ts", "*.tsx"],
     rules: {
       "array-callback-return": "off",
       "no-await-in-loop": "warn",
