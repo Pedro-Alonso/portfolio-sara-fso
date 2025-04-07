@@ -11,6 +11,23 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    files: ["*.ts", "*.tsx"],
+    rules: {
+      "array-callback-return": "off",
+      "no-await-in-loop": "warn",
+      "capitalized-comments": "warn",
+      eqeqeq: ["warn", "always"],
+      "no-console": "warn",
+      "no-magic-numbers": "warn",
+      "no-var": "warn",
+      "no-useless-return": "error",
+      "sort-imports": "warn",
+      "require-await": "error",
+      "no-else-return": "warn",
+      "no-use-before-define": "error",
+    },
+  },
 ];
 
 export default eslintConfig;

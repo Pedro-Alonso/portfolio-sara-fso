@@ -1,0 +1,23 @@
+#!/bin/bash
+
+exec bash <<EOF
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+REGEX="^(feat|fix|release)/[0-9]{2,}/[a-z]{2,}[a-z0-9._-]*$"
+
+if ! [[ \$BRANCH =~ \$REGEX ]]; then
+    echo "❌ Your commit was rejected due to an invalid branch name."
+    echo "✅ Please follow the correct branch naming convention:"
+    echo "   - Start with 'feat/', 'fix/', or 'release/' (depending on the type of change)."
+    echo "   - Followed by a number with at least two digits."
+    echo "   - Followed by a short, descriptive name with at least two letters."
+    echo "   - You can optionally include more letters, numbers, dots (.), underscores (_), or dashes (-)."
+    echo ""
+    echo "🔹 Example of a valid branch name: feat/42/add-user-auth"
+    exit 1
+fi
+
+npm run prepare
+npm run lint
+
+EOF
