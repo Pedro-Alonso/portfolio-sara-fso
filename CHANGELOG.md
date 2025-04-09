@@ -16,6 +16,8 @@
 
     - Husky
     - TailwindCSS
+    - Next.js
+    - next-themes
     - Postcss
     - Gitmoji CLI
     - ESLint

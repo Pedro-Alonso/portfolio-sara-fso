@@ -24,7 +24,7 @@ export const Header = () => {
         <li key={link.label}>
           <Link
             href={link.href}
-            className="text-primary-darker dark:text-primary-lightest"
+            className="text-primary-dark dark:text-primary-lightest"
           >
             {link.label}
           </Link>
