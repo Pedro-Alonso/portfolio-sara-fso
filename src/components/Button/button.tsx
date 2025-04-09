@@ -8,19 +8,18 @@ export const Button = ({
   isDisabled = false,
   onClick,
 }: ButtonProps) => {
-  const getClassName = () => {
-    return [
-      styles.button,
-      styles[type],
-      styles[size],
-      isDisabled ? styles.disabled : "",
-    ]
-      .join(" ")
-      .trim();
-  };
+  const classNames = [
+    styles.button,
+    styles[type],
+    styles[size],
+    isDisabled && styles.disabled,
+    ,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
-    <button className={getClassName()} onClick={onClick}>
+    <button className={classNames} disabled={isDisabled} onClick={onClick}>
       {text}
     </button>
   );
