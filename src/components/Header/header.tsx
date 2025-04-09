@@ -1,8 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { NavLinkItem } from "./header.types";
 import { imageMapper } from "@/common/image-mapper";
-import Link from "next/link";
 import { ThemeSwitcher } from "../ThemeSwitcher/theme-switcher";
+import { Button } from "../Button/button";
 
 export const Header = () => {
   const {
@@ -22,12 +24,12 @@ export const Header = () => {
     return navLinks.map((link) => {
       return (
         <li key={link.label}>
-          <Link
-            href={link.href}
-            className="text-primary-dark dark:text-primary-lightest"
-          >
-            {link.label}
-          </Link>
+          <Button
+            type="tertiary"
+            size="medium"
+            text={link.label}
+            onClick={() => {}}
+          />
         </li>
       );
     });
@@ -50,6 +52,7 @@ export const Header = () => {
         alt={logoAlt}
         width={logoWidth}
         height={logoHeight}
+        onClick={() => {}}
       />
       <h3 className="text-2xl font-bold text-neutral-darkest dark:text-neutral-lightest">
         Seja muito bem-vindo!
