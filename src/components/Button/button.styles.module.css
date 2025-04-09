@@ -1,0 +1,37 @@
+.button {
+  @apply rounded-xl px-4 py-2 font-semibold;
+}
+
+.primary {
+  @apply bg-primary-regular text-neutral-lightest;
+  @apply hover:bg-primary-dark;
+}
+
+.secondary {
+  @apply bg-transparent text-primary-darkest border-primary-dark border-2;
+  @apply dark:text-neutral-lightest  dark:border-primary-light;
+  @apply hover:bg-primary-lightest;
+  @apply dark:hover:bg-primary-darkest dark:hover:text-neutral-light;
+}
+
+.tertiary {
+  @apply bg-transparent text-primary-dark;
+  @apply dark:text-primary-light;
+  @apply hover:text-neutral-dark;
+}
+
+.small {
+  @apply text-xs max-w-32;
+}
+
+.medium {
+  @apply text-sm max-w-32;
+}
+
+.large {
+  @apply text-lg max-w-48;
+}
+
+.disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
