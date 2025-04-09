@@ -12,8 +12,7 @@ export const Button = ({
     styles.button,
     styles[type],
     styles[size],
-    isDisabled && styles.disabled,
-    ,
+    isDisabled && styles.disabled
   ]
     .filter(Boolean)
     .join(" ");
