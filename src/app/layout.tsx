@@ -9,8 +9,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Sara FSO - Portfolio",
-  description: "Portfolio profissional de Sara FSO",
+  title: "Dra. Sara Oliveira - Advogada previdenciária",
+  description:
+    "Advogada previdenciária com mais de meia década de experiência em Direito Previdenciário, atuando em todo o Brasil. Especialista em aposentadorias, pensões e benefícios do INSS.",
 };
 
 export default function RootLayout({
