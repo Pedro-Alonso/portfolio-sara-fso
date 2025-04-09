@@ -12,6 +12,7 @@ export default {
       colors: colors,
     },
   },
-  darkMode: "class",
+  darkMode: ["class", "[class~='dark']"],
+  safelist: ["dark"],
   plugins: [],
 } satisfies Config;

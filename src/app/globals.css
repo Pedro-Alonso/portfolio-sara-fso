@@ -4,13 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: linear-gradient(to bottom, rgb(244, 241, 236) 0%, white 100%);
-  --foreground: #303030;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
+    --background: linear-gradient(to bottom, rgb(244, 241, 236) 0%, white 100%);
+    --foreground: #303030;
+  }
+
+  .dark {
     --background: linear-gradient(
       to bottom,
       rgb(30, 30, 30) 0%,
