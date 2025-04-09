@@ -16,6 +16,6 @@
 
 ## 🔍 Quality checklist
 
-- [ ] **Ran `npm run lint --fix`**
+- [ ] **Ran `npm run lint -- --fix`**
 - [ ] **Has tested**
 - [ ] **Updated CHANGELOG.md**
