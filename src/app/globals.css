@@ -6,16 +6,12 @@
 
 @layer base {
   :root {
-    --background: linear-gradient(to bottom, rgb(244, 241, 236) 0%, white 100%);
+    --background: #f9f9f9;
     --foreground: #303030;
   }
 
   .dark {
-    --background: linear-gradient(
-      to bottom,
-      rgb(30, 30, 30) 0%,
-      rgb(20, 20, 20) 100%
-    );
+    --background: #303030;
     --foreground: #f9f9f9;
   }
 }

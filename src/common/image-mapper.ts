@@ -1,7 +1,7 @@
 import LogoSara from "@/assets/images/logo-sara.png";
 import LogoSaraBig from "@/assets/images/logo-sara-big.png";
-import PortraitSara01 from "@/assets/images/portrait1.jpg";
-import PortraitSara02 from "@/assets/images/portrait2.jpg";
+import PortraitSara01 from "@/assets/images/portrait1.png";
+import PortraitSara02 from "@/assets/images/portrait2.png";
 import { StaticImageData } from "next/image";
 
 type ImageType = {
@@ -15,6 +15,13 @@ const FONT_SIZE =
   typeof window !== "undefined"
     ? parseFloat(getComputedStyle(document.documentElement).fontSize)
     : 16;
+
+const FIFTY_PERCENT_WIDTH =
+  typeof window !== "undefined"
+    ? parseFloat(
+        getComputedStyle(document.documentElement).width.replace("px", "")
+      ) / 2
+    : 0;
 
 export const imageMapper: Record<string, ImageType> = {
   LogoSara: {
@@ -32,7 +39,7 @@ export const imageMapper: Record<string, ImageType> = {
   PortraitSara01: {
     src: PortraitSara01,
     alt: "Dra. Sara Oliveira - Advogada previdenciária",
-    width: 400,
+    width: FIFTY_PERCENT_WIDTH,
     height: 600,
   },
   PortraitSara02: {

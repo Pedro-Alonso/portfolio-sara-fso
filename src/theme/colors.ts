@@ -14,8 +14,8 @@ const colors = {
     darkest: "#332826",
   },
   background: {
-    light: "linear-gradient(to bottom, rgb(244, 241, 236) 0%, white 100%)",
-    dark: "linear-gradient(to bottom, rgb(30, 30, 30) 0%, rgb(20, 20, 20) 100%)",
+    light: "#f9f9f9",
+    dark: "#303030",
   },
   foreground: {
     light: "#303030",
